@@ -6,7 +6,8 @@ import re
 import threading
 import config
 
-genius = lyricsgenius.Genius(config.API_KEY, timeout=15)
+
+genius = lyricsgenius.Genius(config.API_KEY, timeout=60)
 
 data_dir = os.path.join(os.path.dirname(__file__), 'data')
 if not os.path.exists(data_dir):
